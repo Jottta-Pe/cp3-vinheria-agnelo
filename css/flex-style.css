@@ -1,0 +1,132 @@
+/* Define estilo base para o corpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fdf4f0;
+}
+
+/* Estiliza o cabeçalho principal da página */
+.menu {
+  background-color: #5e2c2c;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Remove marcadores da lista e usa flex */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+/* Estilo dos links do menu */
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Efeito ao passar o mouse no menu */
+.menu a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+/* Estilo da seção de destaque */
+.destaque {
+  text-align: center;
+  padding: 32px;
+  background-color: #f2d8c2;
+}
+
+/* Estiliza container dos cards de produto */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px;
+}
+
+/* Estilo base de cada card */
+.card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse no card */
+.card:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Estilo da imagem do card */
+.card-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* Título do card */
+.card h3 {
+  margin: 8px 0 4px;
+  color: #5e2c2c;
+}
+
+/* Parágrafos dentro dos cards */
+.card p {
+  margin: 4px 0;
+}
+
+/* Estilo do botão do card */
+.card button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #5e2c2c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover no botão do card */
+.card button:hover {
+  background-color: #7a3e3e;
+}
+
+/* Container dos tipos de vinho */
+.cardstipo {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px;
+}
+
+/* Estilo dos botões de tipo */
+.cardtipo {
+  background-color: #fff;
+  color: #5e2c2c;
+  padding: 16px 24px;
+  border: 2px solid #5e2c2c;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  outline: none; /* remove o contorno padrão */
+  cursor: pointer;
+}
+
+/* Efeito hover e focus nos tipos */
+.cardtipo:hover,
+.cardtipo:focus {
+  background-color: #5e2c2c;
+  color: #fff;
+  transform: translateY(-5px) scale(1.05);
+}
